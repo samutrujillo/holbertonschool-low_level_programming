@@ -1,29 +1,21 @@
 #include "holberton.h"
 /**
- * print_diagonal - function
- *@n:variable
- * Return: 0 
+ * print_diagonal - Draw a diagonal line
+ * @n: times to print line
+ * Return: None.
  */
 void print_diagonal(int n)
 {
+	int i;
 	int j;
-	int d;
 
 	if (n <= 0)
-	{
 		_putchar('\n');
-		return;
-	}
-
-	for (j = 0; j < n; j++)
+	for (i = 0; i < n; i++)
 	{
-		for (d = 0; d < j; d++)
-		{
+		for (j = 0; j < i; j++)
 			_putchar(' ');
-		}
-
-		_putchar(92);
+		_putchar('\\');
 		_putchar('\n');
 	}
-
 }
