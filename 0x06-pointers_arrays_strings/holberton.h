@@ -1,10 +1,8 @@
 #ifndef HEADER_FILE
 #define HEADER_FILE
 
-//libraries//
 #include <stdio.h>
 
-//prototypes//
 int _putchar(char c);
 char *_strcat(char *dest, char *src);
 char *_strncat(char *dest, char *src, int n);
