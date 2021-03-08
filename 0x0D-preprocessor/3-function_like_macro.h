@@ -1,12 +1,5 @@
-#include <stdio.h>
-/**
- * main - check the code for Holberton School students.
- *
- * Return: Always 0.
- */
-int main(void)
-{
-	printf("%s\n", __FILE__);
+#ifndef HEADER_FILE
+#define HEADER_FILE
+#define ABS(x) ((x) < 0 ? (x) * -1 : (x))
 
-	return (0);
-}
+#endif
