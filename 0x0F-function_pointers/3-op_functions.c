@@ -1,67 +1,52 @@
+
 #include "3-calc.h"
-#include <stdio.h>
 /**
- * op_add - Add two numbers
- * @a: Number one
- * @b: Number two
- * Return: Addition
+ * op_add - program that prints its name.
+ * @a: array of character pointers
+ * @b: array of character pointers
+ * Return: a + b.
  */
 int op_add(int a, int b)
 {
-	int res;
-
-	res = a + b;
-	return (res);
+	return (a + b);
 }
 /**
- * op_sub - Difference bewteen two numbers
- * @a: Number one
- * @b: Number two
- * Return: Difference
+ * op_sub - program that prints its name.
+ * @a: array of character pointers
+ * @b: array of character pointers
+ * Return: a - b.
  */
 int op_sub(int a, int b)
 {
-	int res;
-
-	res = a - b;
-	return (res);
+	return (a - b);
 }
 /**
- * op_mul - Multiplicates two numbers
- * @a: Number one
- * @b: Number two
- * Return: Multiplication
+ * op_mul - program that prints its name.
+ * @a: array of character pointers
+ * @b: array of character pointers
+ * Return: a * b.
  */
 int op_mul(int a, int b)
 {
-	int res;
-
-	res = a * b;
-	return (res);
+	return (a * b);
 }
 /**
- * op_div - Divide two numbers
- * @a: Number one
- * @b: Number two
- * Return: Division
+ * op_div - program that prints its name.
+ * @a: array of character pointers
+ * @b: array of character pointers
+ * Return: a / b.
  */
 int op_div(int a, int b)
 {
-	int res;
-
-	res = a / b;
-	return (res);
+	return (a / b);
 }
 /**
- * op_mod - Remainder from two numbers
- * @a: Number one
- * @b: Number two
- * Return: Remainder of division
+ * op_mod - program that prints its name.
+ * @a: array of character pointers
+ * @b: array of character pointers
+ * Return: a % b.
  */
 int op_mod(int a, int b)
 {
-	int res;
-
-	res = a % b;
-	return (res);
+	return (a % b);
 }

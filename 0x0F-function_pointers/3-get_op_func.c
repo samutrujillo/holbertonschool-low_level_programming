@@ -1,9 +1,9 @@
-include "3-calc.h"
-#include <stdio.h>
+#include "3-calc.h"
+#include <stdlib.h>
 /**
- * get_op_func - Struct op
- * @s: variable
- * Return: NULL
+ * *get_op_func - program that prints its name.
+ * @s: array of character pointers
+ * Return: NULL.
  */
 int (*get_op_func(char *s))(int, int)
 {
@@ -20,7 +20,7 @@ int (*get_op_func(char *s))(int, int)
 	i = 0;
 	while (i < 5)
 	{
-		if (*s == *(ops[i].op))
+		if (*s == *ops[i].op)
 			return (ops[i].f);
 		i++;
 	}

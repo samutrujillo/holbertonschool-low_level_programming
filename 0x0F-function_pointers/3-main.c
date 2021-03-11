@@ -1,36 +1,36 @@
 #include "3-calc.h"
-#include <stdio.h>
 #include <stdlib.h>
+#include <stdio.h>
 /**
- * main - Struct op
- * @ac: variable - Number of arguments
- * @av: variable - Arguments
- * Return: 0
+ * main - program that prints its name.
+ * @argc: array of character pointers
+ * @argv: array of character pointers
+ * Return: o
  */
-int main(int ac, char **av)
+int main(int argc, char *argv[])
 {
-	int num1, num2, res;
-
-	if (ac != 4)
+	int num1, num2;
+ /*if argc is diferent or 4 my program print Error*/
+	if (argc != 4)
 	{
 		printf("Error\n");
 		exit(98);
 	}
-	if ((av[2][0] != '+' && av[2][0] != '-' && av[2][0] != '*' &&
-	    av[2][0] != '/' && av[2][0] != '%') || av[2][1] != '\0')
+/*cast firs argument to int */
+	num1 = atoi(argv[1]);
+	num2 = atoi(argv[3]);
+	if ((argv[2][0] != '+' && argv[2][0] != '-' && argv[2][0] != '*' &&
+	     argv[2][0] != '/' && argv[2][0] != '%') || argv[2][1] != '\0')
 	{
 		printf("Error\n");
 		exit(99);
 	}
-	num1 = atoi(av[1]);
-	num2 = atoi(av[3]);
-	if (num2 == 0 && (av[2][0] == '/' || av[2][0] == '%'))
+	if (num2 == 0 && (argv[2][0] == '/' || argv[2][0] == '%'))
 	{
 		printf("Error\n");
 		exit(100);
 	}
-	res = (*get_op_func(av[2]))(num1, num2);
-	printf("%i\n", res);
+	printf("%d\n", (get_op_func(argv[2])(num1, num2)));
 
 	return (0);
 }
