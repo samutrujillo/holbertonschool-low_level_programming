@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * flip_bits - function that returns the number of bits 
+ * flip_bits - function that returns the number of bits
  * @n: var
  * @m: var
  * Return: j
