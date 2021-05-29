@@ -3,7 +3,7 @@
  * hash_table_get - function
  * @ht: Hash table
  * @key: Key
- * Return: Pointer to value, NULL if failed
+ * Return: Pointer to value
  */
 char *hash_table_get(const hash_table_t *ht, const char *key)
 {
